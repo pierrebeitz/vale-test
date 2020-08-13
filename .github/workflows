@@ -1,7 +1,5 @@
 name: Linting
-on: [push]
-
-
+on: [push, pull_request]
 jobs:
   prose:
     runs-on: ubuntu-latest
@@ -20,7 +18,7 @@ jobs:
         config: https://raw.githubusercontent.com/errata-ai/vale/master/.vale.ini
 
         # Optional
-        # files: path/to/lint
+        files: /
       env:
-        # Required
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
