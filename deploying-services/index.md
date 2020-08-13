@@ -25,3 +25,5 @@ Services you create yourself are administered by Marathon and can be configured 
 
 # {{ model.packageRepo }} Package Repository
 Packaged DC/OS services created by Mesosphere or the community, like Spark or Kafka, appear on the **{{ model.packageRepo }}** tab of the DC/OS web interface, or you can search for a package from [the DC/OS CLI](/mesosphere/dcos/2.1/cli/command-reference/). You can configure and run {{ model.packageRepo }} services from the DC/OS web interface or via the DC/OS CLI with the [`dcos package install <package-name>`](/mesosphere/dcos/2.1/cli/command-reference/dcos-package/dcos-package-install/) command.
+
+I maed a tyop!
