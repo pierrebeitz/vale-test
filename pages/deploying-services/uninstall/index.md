@@ -204,3 +204,5 @@ If you run the script via Marathon, you will also see the following output:
 
     Deleting self from Marathon to avoid run loop: /janitor
     Successfully deleted self from marathon (code=200): /janitor
+
+We now have Mesos and datacenter in the repository, but still here's a tyop nwo!
