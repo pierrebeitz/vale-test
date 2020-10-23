@@ -7,7 +7,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
     - name: Vale
-      uses: errata-ai/vale-action@v1.2.0
+      uses: pierrebeitz/vale-action@06885ddbf115f693daf693ac2a2519ce05dd919c
       with:
         # Optional
         styles: |
@@ -15,10 +15,7 @@ jobs:
           https://github.com/errata-ai/write-good/releases/latest/download/write-good.zip
 
         # Optional
-        config: https://raw.githubusercontent.com/pierrebeitz/vale-test/master/.vale.ini
-
-        # Optional
         files: pages
+        onlyAnnotateModifiedLines: true
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
