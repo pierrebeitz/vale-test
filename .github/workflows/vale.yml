@@ -1,5 +1,7 @@
 name: Linting
-on: [push, pull_request]
+
+on: [pull_request]
+
 jobs:
   prose:
     runs-on: ubuntu-latest
@@ -7,15 +9,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
     - name: Vale
-      uses: pierrebeitz/vale-action@06885ddbf115f693daf693ac2a2519ce05dd919c
+      uses: pierrebeitz/vale-action@41b280003eedd2e9da8633e8b873e4e632077a4f
       with:
-        # Optional
-        styles: |
-          https://github.com/errata-ai/Microsoft/releases/latest/download/Microsoft.zip
-          https://github.com/errata-ai/write-good/releases/latest/download/write-good.zip
-
-        # Optional
-        files: pages
         onlyAnnotateModifiedLines: true
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
