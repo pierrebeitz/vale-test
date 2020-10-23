@@ -7,7 +7,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
     - name: Vale
-      uses: pierrebeitz/vale-action@984edd1b32f97099178101af75a9fcaafd7aa3e2
+      uses: pierrebeitz/vale-action@0b5bdd9
       with:
         # Optional
         styles: |
@@ -19,6 +19,6 @@ jobs:
 
         # Optional
         files: pages
-        onlyAnnotateModifiedLines: 'true'
+        onlyAnnotateModifiedLines: true
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
